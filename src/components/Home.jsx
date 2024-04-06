@@ -11,7 +11,7 @@ const Home = () => {
       <div className="p-4 h-[40vh]">
         <div className="flex justify-center text-xs md:text-xl flex-wrap">
           <p className="flex flex-col text-center m-4">
-            <span className="uppercase">chracters</span>
+            <span className="uppercase">characters</span>
             <span>4657</span>
           </p>
           <p className="flex flex-col text-center m-4">
