@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   const categoryStyle = {
+    width: "250px",
     height: "250px",
   };
   return (
@@ -38,8 +39,10 @@ const Home = () => {
         </div>
       </div>
       <div className="grid">
-        <span className="m-4 font-bold uppercase">Famous Characters</span>
-        <div className="m-4 grid gap-4 sm:grid-cols-5 grid-cols-2 place-items-center">
+        <span className="m-4 font-bold uppercase text-center">
+          Famous Characters
+        </span>
+        <div className="m-4 flex flex-wrap justify-center">
           <Link key={"harry-potter"} to="/characters/harry-potter">
             <Card
               name="Harry Potter"
@@ -74,8 +77,8 @@ const Home = () => {
       </div>
 
       <div className="grid">
-        <span className="m-4 font-bold uppercase">Categories</span>
-        <div className="m-4 grid gap-4 sm:grid-cols-5 grid-cols-2 place-items-center">
+        <span className="m-4 font-bold uppercase text-center">Categories</span>
+        <div className="m-4 flex flex-wrap justify-center">
           <Link to="/books">
             <Card
               key={"books"}

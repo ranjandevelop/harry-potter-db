@@ -47,7 +47,7 @@ const Category = () => {
         </label>
       )}
 
-      <div className="grid md:grid-cols-4 p-7 gap-7 place-items-center">
+      <div className="flex flex-wrap justify-center">
         {category.length > 0 ? (
           category.map((data) => (
             <Link key={data.id} to={`${url}/${data.attributes.slug}`}>

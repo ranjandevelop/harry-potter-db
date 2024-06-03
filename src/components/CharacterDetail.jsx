@@ -11,7 +11,7 @@ const CharacterDetail = () => {
   }, []);
   return (
     <div className="flex justify-center">
-      <div className="card w-96 bg-base-100 shadow-xl m-5">
+      <div className="card bg-base-100 shadow-xl m-5">
         <figure>
           <img src={character.image} alt="" className="rounded" />
         </figure>

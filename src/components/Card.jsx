@@ -4,7 +4,7 @@ const Card = ({ name, cover, styles }) => {
   return (
     <>
       <div
-        className="relative min-h-[150px] rounded-md shadow-[1px_1px_10px_rgba(0,0,0,0.4)]"
+        className="relative min-h-[150px] rounded-md shadow-[1px_1px_10px_rgba(0,0,0,0.4)] m-4"
         style={styles}
       >
         <img
