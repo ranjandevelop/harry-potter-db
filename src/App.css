@@ -1,3 +1,48 @@
-/* body {
-  background-color: oklch(var(--nc));
-} */
+::-webkit-scrollbar {
+  width: 0;
+}
+
+@font-face {
+  font-family: HarryPotterFont;
+  src: url("./assets/HarryPotter-ov4z.ttf");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+#main-heading {
+  font-family: HarryPotterFont;
+  font-weight: 400;
+  font-style: normal;
+  color: #856538;
+  font-size: 4em;
+}
+
+#category-title {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4em;
+  letter-spacing: 0.1em;
+}
+
+#main-section {
+  background-image: url("https://cdn.pixabay.com/photo/2020/04/30/19/01/dining-room-5114247_1280.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#details {
+  /* font-family: "Crimson Text"; */
+}
+
+@media screen and (max-width: 480px) {
+  #main-heading {
+    font-size: 1.7em;
+  }
+  #category-title {
+    font-size: 1em;
+  }
+}

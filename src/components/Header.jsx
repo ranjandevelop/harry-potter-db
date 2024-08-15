@@ -4,9 +4,10 @@ import { NavLink, Outlet } from "react-router-dom";
 const Header = () => {
   return (
     <>
-      <div className="navbar bg-base-100 sticky top-0 z-50 shadow">
+      {/* <div className="navbar bg-base-100 sticky top-0 z-50 shadow bg-[#918e81]">
         <div className="navbar-start">
-          <div className="dropdown">
+          <a className="btn btn-ghost text-xl">Potter Database</a> */}
+      {/* <div className="dropdown">
             <div role="button" className="btn btn-ghost btn-circle">
               <img
                 width="100"
@@ -15,11 +16,9 @@ const Header = () => {
                 alt="harry-potter"
               />
             </div>
-          </div>
-        </div>
-        <div className="navbar-center">
-          <a className="btn btn-ghost text-xl">Potter Database</a>
-        </div>
+          </div> */}
+      {/* </div>
+        <div className="navbar-center"></div>
         <div className="navbar-end">
           <a
             className="btn btn-ghost btn-circle"
@@ -40,17 +39,20 @@ const Header = () => {
               width="40"
               height="40"
               src="https://img.icons8.com/fluency-systems-regular/48/github.png"
-              alt="github"
-            />
+              alt="github" */}
+      {/* />
           </a>
+        </div>
+      </div> */}
+      <div id="main-section" className="bg-[#ccc] p-4">
+        <div className="border sm:m-9 mt-10 bg-[#ffffffe6] rounded-sm ">
+          <Outlet />
         </div>
       </div>
 
-      <Outlet />
-
-      <footer className="footer p-4 text-neutral-content flex border">
+      {/* <footer className="footer p-4 text-neutral-content flex border">
         <a href="https://github.com/ranjandevelop">Github</a>
-      </footer>
+      </footer> */}
     </>
   );
 };

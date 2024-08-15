@@ -12,7 +12,7 @@ const SpellDetail = () => {
   console.log(spell);
   return (
     <div className="flex justify-center">
-      <div className="card w-96 bg-base-100 shadow-xl m-5">
+      <div className="card w-96 md:bg-base-100 md:shadow-xl m-5">
         <figure>
           <img src={spell.image} alt="" className="rounded" />
         </figure>

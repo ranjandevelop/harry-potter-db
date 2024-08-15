@@ -10,46 +10,47 @@ const CharacterDetail = () => {
       .then((response) => setCharacter(response.data.attributes));
   }, []);
   return (
-    <div className="flex justify-center">
-      <div className="card bg-base-100 shadow-xl m-5">
-        <figure>
-          <img src={character.image} alt="" className="rounded" />
-        </figure>
-        <div className="card-body">
-          <h1 className="card-title text-xl">{character.name}</h1>
+    <div id="details" className="flex justify-center">
+      <div className="p-4 border-4">
+        <div>
+          <h1 className="card-title text-xl m-4">{character.name}</h1>
+        </div>
+        <div className="flex justify-center align-middle p-4">
+          <div className="flex flex-col align-middle">
+            <span class="pr-9">
+              <b>Born: </b>
+              {character.born}
+            </span>
+            <span>
+              <b>Died:</b>
+              {character.died}
+            </span>
+            <span>
+              <b>Blood Status: </b>
+              {character.blood_status}
+            </span>
+            <span>
+              <b>Hogwarts House: </b>
+              {character.house}
+            </span>
+            <span>
+              <b>Boggart: </b>
+              {character.boggart}
+            </span>
+            <span>
+              <b>Animagus: </b>
+              {character.animagus}
+            </span>
+          </div>
+          <div className="text-center">
+            <img src={character.image} alt="" className="rounded" />
+          </div>
+        </div>
+        <div className="flex flex-col">
           <hr />
-
           <span>
             <b>Alias: </b>
             {character.alias_names}
-          </span>
-          <span>
-            <b>Blood Status: </b>
-            {character.blood_status}
-          </span>
-          <span>
-            <b>Born: </b>
-            {character.born}
-          </span>
-          <span>
-            <b>Died:</b>
-            {character.died}
-          </span>
-          <span>
-            <b>Jobs: </b>
-            {character.jobs}
-          </span>
-          <span>
-            <b>Hogwarts House: </b>
-            {character.house}
-          </span>
-          <span>
-            <b>Boggart: </b>
-            {character.boggart}
-          </span>
-          <span>
-            <b>Animagus: </b>
-            {character.animagus}
           </span>
           <span>
             <b>Patronus: </b>
@@ -62,6 +63,10 @@ const CharacterDetail = () => {
           <span>
             <b>Romances: </b>
             {character.romances}
+          </span>
+          <span>
+            <b>Jobs: </b>
+            {character.jobs}
           </span>
           <a href={character.wiki} className="underline text-blue-700">
             Potter Wiki

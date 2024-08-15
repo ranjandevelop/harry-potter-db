@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Card from "./Card";
 import { Link } from "react-router-dom";
-
+import DeathlyHollow from "../assets/25.webp";
 const Home = () => {
   const categoryStyle = {
     width: "250px",
@@ -9,40 +9,22 @@ const Home = () => {
   };
   return (
     <>
-      <div className="p-4 h-[40vh]">
-        <div className="flex justify-center text-xs md:text-xl flex-wrap">
-          <p className="flex flex-col text-center m-4">
-            <span className="uppercase">characters</span>
-            <span>4657</span>
-          </p>
-          <p className="flex flex-col text-center m-4">
-            <span className="uppercase">books</span>
-            <span>7</span>
-          </p>
-          <p className="flex flex-col text-center m-4">
-            <span className="uppercase">spells</span>
-            <span>315</span>
-          </p>
-          <p className="flex flex-col text-center m-4">
-            <span className="uppercase">potions</span>
-            <span>168</span>
-          </p>
-          <p className="flex flex-col text-center m-4">
-            <span className="uppercase">Movies</span>
-            <span>11</span>
-          </p>
-        </div>
-        <div className="quote text-left m-5 md:text-center md:p-5">
-          Potter Database is a collaborative knowledge base about the
-          widely-popular series by j.k rowling, including the books, movies,
-          chracters, and much more.
-        </div>
+      {/* Main Heading of the website */}
+      <div className="p-4 pt-9">
+        <h1 id="main-heading" className="text-center m-4">
+          Welcome to the harry potter world
+        </h1>
       </div>
+      {/* --------------------------------- */}
       <div className="grid">
-        <span className="m-4 font-bold uppercase text-center">
-          Famous Characters
+        <span className="m-4 mb-0 font-bold uppercase flex align-middle d-inline">
+          <img src={DeathlyHollow} alt="" className="" />{" "}
+          <h4 id="category-title" className="text-[#856538]">
+            Characters
+          </h4>
+          <img src={DeathlyHollow} alt="" className="" />{" "}
         </span>
-        <div className="m-4 flex flex-wrap justify-center">
+        <div className="md:m-4 mt-0 flex flex-wrap justify-center">
           <Link key={"harry-potter"} to="/characters/harry-potter">
             <Card
               name="Harry Potter"
@@ -73,11 +55,18 @@ const Home = () => {
               cover={`https://static.wikia.nocookie.net/harrypotter/images/a/aa/Voldemort_Headshot_DHP1.png`}
             />
           </Link>
+          {/*  */}
         </div>
       </div>
 
       <div className="grid">
-        <span className="m-4 font-bold uppercase text-center">Categories</span>
+        <span className="m-4 mb-0 font-bold uppercase flex align-middle d-inline">
+          <img src={DeathlyHollow} alt="" className="" />{" "}
+          <h4 id="category-title" className="text-[#856538]">
+            Categories
+          </h4>
+          <img src={DeathlyHollow} alt="" className="" />{" "}
+        </span>
         <div className="m-4 flex flex-wrap justify-center">
           <Link to="/books">
             <Card
