@@ -28,13 +28,13 @@ const Home = () => {
           <Link key={"harry-potter"} to="/characters/harry-potter">
             <Card
               name="Harry Potter"
-              cover={`https://static.wikia.nocookie.net/harrypotter/images/9/97/Harry_Potter.jpg`}
+              cover={`https://static.wikia.nocookie.net/harrypotter/images/c/ce/Harry_Potter_DHF1.jpg`}
             />
           </Link>
           <Link key={"ron-weasley"} to="/characters/ronald-weasley">
             <Card
               name="Ronald Weasley"
-              cover={`https://static.wikia.nocookie.net/harrypotter/images/8/85/Ron_Weasley.jpg`}
+              cover={`https://static.wikia.nocookie.net/harrypotter/images/4/44/Ronald_Weasley_DHF1.jpg`}
             />
           </Link>
           <Link key={"hermionde-granger"} to="/characters/hermione-granger">
@@ -46,13 +46,13 @@ const Home = () => {
           <Link key={"albus-dumbledore"} to="/characters/albus-dumbledore">
             <Card
               name="Albus Dumbledore"
-              cover={`https://static.wikia.nocookie.net/harrypotter/images/4/40/Albus_Dumbledore_%28HBP_promo%29_3.jpg`}
+              cover={`https://static.wikia.nocookie.net/harrypotter/images/7/75/Albus_Dumbledore_%28HBPF_promo%29.jpg`}
             />
           </Link>
           <Link key={"tom-riddle"} to="/characters/tom-riddle">
             <Card
               name="Tom Riddle"
-              cover={`https://static.wikia.nocookie.net/harrypotter/images/a/aa/Voldemort_Headshot_DHP1.png`}
+              cover={`https://static.wikia.nocookie.net/harrypotter/images/9/97/Voldemort_Headshot_DHF1.png`}
             />
           </Link>
           {/*  */}
