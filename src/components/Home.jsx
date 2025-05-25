@@ -4,18 +4,11 @@ import { Link } from "react-router-dom";
 import DeathlyHollow from "../assets/25.webp";
 const Home = () => {
   const categoryStyle = {
-    width: "250px",
-    height: "250px",
+    width: "200px",
+    height: "150px",
   };
   return (
     <>
-      {/* Main Heading of the website */}
-      <div className="p-4 pt-9">
-        <h1 id="main-heading" className="text-center m-4">
-          Welcome to the harry potter world
-        </h1>
-      </div>
-      {/* --------------------------------- */}
       <div className="grid">
         <span className="m-4 mb-0 font-bold uppercase flex align-middle d-inline">
           <img src={DeathlyHollow} alt="" className="" />{" "}
@@ -24,7 +17,7 @@ const Home = () => {
           </h4>
           <img src={DeathlyHollow} alt="" className="" />{" "}
         </span>
-        <div className="md:m-4 mt-0 flex flex-wrap justify-center">
+        <div className="md:m-4 mt-0 flex flex-wrap justify-evenly">
           <Link key={"harry-potter"} to="/characters/harry-potter">
             <Card
               name="Harry Potter"
@@ -67,7 +60,7 @@ const Home = () => {
           </h4>
           <img src={DeathlyHollow} alt="" className="" />{" "}
         </span>
-        <div className="m-4 flex flex-wrap justify-center">
+        <div className="m-4 flex flex-wrap justify-evenly">
           <Link to="/books">
             <Card
               key={"books"}

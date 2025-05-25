@@ -11,13 +11,15 @@ const CharacterDetail = () => {
   }, []);
   return (
     <div id="details" className="flex justify-center">
-      <div className="p-4 border-4">
+      <div className="container border rounded">
         <div>
-          <h1 className="card-title text-xl m-4">{character.name}</h1>
+          <h1 className="card-title text-4xl m-4 text-center">
+            {character.name}
+          </h1>
         </div>
         <div className="flex justify-center align-middle p-4">
-          <div className="flex flex-col align-middle">
-            <span class="pr-9">
+          <div className="flex flex-col justify-center px-5">
+            <span className="pr-9">
               <b>Born: </b>
               {character.born}
             </span>
@@ -43,14 +45,15 @@ const CharacterDetail = () => {
             </span>
           </div>
           <div className="text-center">
-            <img src={character.image} alt="" className="rounded" />
+            <img src={character.image} alt="" className="rounded w-[250px]" />
           </div>
         </div>
-        <div className="flex flex-col">
-          <hr />
+        <hr />
+        <div className="flex flex-col p-5">
           <span>
             <b>Alias: </b>
-            {character.alias_names}
+            {(character.alias_names || []).join(" , ")}
+            {console.log(character)}
           </span>
           <span>
             <b>Patronus: </b>
@@ -58,15 +61,15 @@ const CharacterDetail = () => {
           </span>
           <span>
             <b>Family Members: </b>
-            {character.family_members}
+            {(character.family_members || []).join(" , ")}
           </span>
           <span>
             <b>Romances: </b>
-            {character.romances}
+            {(character.romances || []).join(" , ")}
           </span>
           <span>
             <b>Jobs: </b>
-            {character.jobs}
+            {(character.jobs || []).join(" , ")}
           </span>
           <a href={character.wiki} className="underline text-blue-700">
             Potter Wiki
