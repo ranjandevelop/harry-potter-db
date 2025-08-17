@@ -52,7 +52,7 @@ const Category = () => {
       <div className="flex flex-wrap justify-center">
         {category.length > 0 ? (
           category.map((data) => (
-            <Link key={data.id} to={`${url}/${data.attributes.slug}`}>
+            <Link key={data.id} to={`${url}${data.attributes.slug}`}>
               <Card
                 key={data.id}
                 name={
