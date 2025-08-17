@@ -23,7 +23,17 @@ export const BentoGridItem = ({ className, title, description, image }) => {
       )}
     >
       <Link
-        to={`/characters/${title.toLowerCase().replace(/\s+/g, "-")}`}
+        to={
+          !(
+            title === "Characters" ||
+            title === "Spells" ||
+            title === "Potions" ||
+            title === "Books" ||
+            title === "Movies"
+          )
+            ? `/characters/${title.toLowerCase().replace(/\s+/g, "-")}`
+            : `/${title.toLowerCase().replace(/\s+/g, "-")}`
+        }
         className="h-full flex flex-col justify-between"
       >
         <div

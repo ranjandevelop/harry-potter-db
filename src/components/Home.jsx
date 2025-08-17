@@ -13,6 +13,7 @@ import {
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
+
 const Home = () => {
   return (
     <>
@@ -113,6 +114,7 @@ const Home = () => {
           </Link>
         </div>
       </div> */}
+
       <BentoGrid className="max-w-4xl mx-auto">
         {items.map((item, i) => (
           <BentoGridItem
@@ -190,6 +192,36 @@ const items = [
     description: "Severus Snape, a complex character with a mysterious past.",
     image:
       "https://static.wikia.nocookie.net/harrypotter/images/d/df/Severus_Snape_MP.png/",
+  },
+  {
+    title: "Spells",
+    description: "A collection of spells from the wizarding world.",
+    image:
+      "https://static.wikia.nocookie.net/harrypotter/images/9/99/Accio_cup.gif/",
+  },
+  {
+    title: "Potions",
+    description: "A collection of potions from the wizarding world.",
+    image:
+      "https://static.wikia.nocookie.net/harrypotter/images/4/44/PotionsHPCard.jpg/",
+  },
+  {
+    title: "Characters",
+    description: "A collection of characters from the wizarding world.",
+    image:
+      "https://static.wikia.nocookie.net/harrypotter/images/1/14/BellatrixLestrange.png/",
+  },
+  {
+    title: "Movies",
+    description: "A collection of movies from the wizarding world.",
+    image:
+      "https://static.wikia.nocookie.net/harrypotter/images/b/bd/Aberto.gif/",
+  },
+  {
+    title: "Books",
+    description: "A collection of books from the wizarding world.",
+    image:
+      "https://static.wikia.nocookie.net/harrypotter/images/7/7a/Harry_Potter_and_the_Philosopher%27s_Stone_%E2%80%93_Bloomsbury_2014_Children%27s_Edition_%28Paperback_and_Hardcover%29.jpg/",
   },
 ];
 
