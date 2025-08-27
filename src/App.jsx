@@ -22,9 +22,6 @@ function App() {
             <Route path="/movies/:id" element={<MovieDetail />} />
             <Route path="/characters/:id" element={<CharacterDetail />} />
             <Route path="/:id" element={<Category />} />
-            <Route />
-            <Route />
-            {/*  */}
           </Route>
         </Routes>
       </BrowserRouter>
