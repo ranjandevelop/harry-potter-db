@@ -1,5 +1,5 @@
-import { cn } from "../lib/utils";
-import { BentoGrid, BentoGridItem } from "../components/ui/bento-grid";
+import { cn } from "../../lib/utils";
+import { BentoGrid, BentoGridItem } from "../../components/ui/bento-grid";
 import {
   IconArrowWaveRightUp,
   IconBoxAlignRightFilled,
@@ -9,7 +9,7 @@ import {
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
-import character_index from "../assets/character_index.png";
+import character_index from "../../assets/character_index.png";
 // import character_section_texture from "../assets/section_texture_bg.png";
 
 const Home = () => {

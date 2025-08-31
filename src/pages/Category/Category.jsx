@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import Card from "./Card";
+import { Card } from "../../components/index";
+import { useEffect, useState } from "react";
 
 const Category = () => {
   const [category, setCategory] = useState([]);

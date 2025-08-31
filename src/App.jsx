@@ -1,5 +1,4 @@
 import "./App.css";
-import Home from "./pages/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PotionDetail from "./components/PotionDetail";
 import BookDetail from "./components/BookDetail";
@@ -7,7 +6,7 @@ import SpellDetail from "./components/SpellDetail";
 import MovieDetail from "./components/MovieDetail";
 import CharacterDetail from "./components/CharacterDetail";
 import { Header } from "./components/index";
-import Category from "./components/Category";
+import { Home, Category } from "./pages/index";
 
 function App() {
   return (
