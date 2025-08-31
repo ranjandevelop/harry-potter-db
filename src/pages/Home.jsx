@@ -9,21 +9,49 @@ import {
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
+import character_index from "../assets/character_index.png";
+// import character_section_texture from "../assets/section_texture_bg.png";
 
 const Home = () => {
   return (
     <>
-      <BentoGrid className="max-w-4xl mx-auto">
-        {items.map((item, i) => (
-          <BentoGridItem
-            key={i}
-            title={item.title}
-            description={item.description}
-            image={item.image}
-            className={i === 3 || i === 6 ? "" : ""}
-          />
-        ))}
-      </BentoGrid>
+      <section class="bg-[#2c228b]">
+        <div className="container-fluid">
+          <div className="row flex justify-center">
+            <div className="col-5">
+              <img src={character_index} alt="" />
+            </div>
+            <div className="col-7">
+              <h2>Meet the Characters</h2>
+              <p>
+                Witches, wizards and Muggles! We meet so many characters in the
+                first Harry Potter book. Learn more about your favourite (or
+                least favourite) ones here.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="container-fluid">
+          <div className="row">
+            <h2>Students</h2>
+            <div className="cards">
+              <BentoGrid className="max-w-4xl mx-auto">
+                {items.map((item, i) => (
+                  <BentoGridItem
+                    key={i}
+                    title={item.title}
+                    description={item.description}
+                    image={item.image}
+                    className={i === 3 || i === 6 ? "" : ""}
+                  />
+                ))}
+              </BentoGrid>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
