@@ -1,20 +1,38 @@
 const Card = ({ name, cover, styles }) => {
   return (
     <>
-      <div
-        className="relative min-h-[150px] rounded-md shadow-[1px_1px_10px_rgba(0,0,0,0.4)] m-4"
-        style={styles}
-      >
+      <div className="relative min-h-[150px] m-5" style={styles}>
         <img
           src={cover}
           alt=""
-          className="z-0 h-full w-[200px] rounded-md object-cover"
+          className="z-0 h-full w-[200px] rounded-full object-cover border"
+          style={{
+            border: "5px solid white",
+          }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+
         <div className="absolute bottom-4 left-4 text-left">
-          <h1 className="text-xs font-semibold text-white md:text-md">
-            <>{name}</>
-          </h1>
+          <span
+            className="text-xs font-semibold text-white md:text-md"
+            style={{
+              position: "absolute",
+              bottom: "-0.625rem",
+              left: "50%",
+              transform: "translateX(-50%)",
+              backgroundColor: "#140f43",
+              padding: ".625rem 1.875rem",
+              " border-radius": "2.125rem",
+              "font-size": "1.375rem",
+              "line-height": "1.6875rem",
+              // "color: #fff",
+              "white-space": "nowrap",
+              "text-align": "center",
+              "letter-spacing": "-1px",
+              transition: "background-color .3s",
+            }}
+          >
+            {name}
+          </span>
         </div>
       </div>
     </>
