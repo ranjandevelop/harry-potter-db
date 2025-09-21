@@ -55,7 +55,6 @@ const Home = () => {
     </>
   );
 };
-
 const items = [
   {
     title: "Harry Potter",
