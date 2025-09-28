@@ -1,61 +1,40 @@
-import { cn } from "../../lib/utils";
-import { BentoGrid, BentoGridItem } from "../../components/ui/bento-grid";
-import {
-  IconArrowWaveRightUp,
-  IconBoxAlignRightFilled,
-  IconBoxAlignTopLeft,
-  IconClipboardCopy,
-  IconFileBroken,
-  IconSignature,
-  IconTableColumn,
-} from "@tabler/icons-react";
-import character_index from "../../assets/character_index.png";
-// import character_section_texture from "../assets/section_texture_bg.png";
+import Hero from "../../components/Hero";
+import Card from "../../components/Card/Card";
 
 const Home = () => {
   return (
     <>
-      <section class="bg-[#2c228b]">
-        <div className="container-fluid">
-          <div className="row flex justify-center">
-            <div className="col-5">
-              <img src={character_index} alt="" />
-            </div>
-            <div className="col-7">
-              <h2>Meet the Characters</h2>
-              <p>
-                Witches, wizards and Muggles! We meet so many characters in the
-                first Harry Potter book. Learn more about your favourite (or
-                least favourite) ones here.
-              </p>
-            </div>
+      <Hero />
+      <div class="bg-white py-6 sm:py-8 lg:py-12">
+        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+          <div class="mb-10 md:mb-16">
+            <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
+              Explore
+            </h2>
+
+            {/* <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
+              This is a section of some simple filler text, also known as
+              placeholder text. It shares some characteristics of a real written
+              text but is random or otherwise generated.
+            </p> */}
+          </div>
+
+          <div class="grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-8">
+            {categories.map((item, i) => (
+              <Card
+                key={i}
+                name={item.title}
+                cover={item.image}
+                desc={item.description}
+              />
+            ))}
           </div>
         </div>
-      </section>
-      <section>
-        <div className="container-fluid">
-          <div className="row">
-            <h2>Students</h2>
-            <div className="cards">
-              <BentoGrid className="max-w-4xl mx-auto">
-                {items.map((item, i) => (
-                  <BentoGridItem
-                    key={i}
-                    title={item.title}
-                    description={item.description}
-                    image={item.image}
-                    className={i === 3 || i === 6 ? "" : ""}
-                  />
-                ))}
-              </BentoGrid>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
     </>
   );
 };
-const items = [
+const characters = [
   {
     title: "Harry Potter",
     description: "Harry James Potter, the Boy Who Lived.",
@@ -118,6 +97,9 @@ const items = [
     image:
       "https://static.wikia.nocookie.net/harrypotter/images/d/df/Severus_Snape_MP.png/",
   },
+];
+
+const categories = [
   {
     title: "Spells",
     description: "A collection of spells from the wizarding world.",

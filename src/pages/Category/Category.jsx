@@ -67,10 +67,6 @@ const Category = () => {
                     ? data.attributes.cover
                     : data.attributes.poster
                 }
-                styles={{
-                  width: "200px",
-                  height: "200px",
-                }}
               />
             </Link>
           ))
