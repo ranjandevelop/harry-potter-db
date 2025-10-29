@@ -47,40 +47,37 @@ const Hero = () => {
             </a>
           </div>
         </div>
-      </section>
-      <div class="bg-white py-6 sm:py-8 lg:py-12" id="sectionHarryPotter">
-        <div class="mx-auto max-w-screen-xl px-4 md:px-8">
-          <div class="grid grid-cols-2 gap-8 md:grid-cols-4 md:gap-0 md:divide-x">
-            <div class="flex flex-col items-center md:p-4">
-              <div class="text-xl font-bold text-indigo-500 sm:text-2xl md:text-3xl">
-                7
-              </div>
-              <div class="text-sm font-semibold sm:text-base">Books</div>
-            </div>
 
-            <div class="flex flex-col items-center md:p-4">
-              <div class="text-xl font-bold text-indigo-500 sm:text-2xl md:text-3xl">
-                5246
-              </div>
-              <div class="text-sm font-semibold sm:text-base">Characters</div>
+        <div class="grid grid-cols-2 gap-8 md:grid-cols-4 md:gap-0">
+          <div class="flex flex-col items-center md:p-4">
+            <div class="text-xl font-bold text-indigo-500 sm:text-2xl md:text-3xl">
+              7
             </div>
+            <div class="text-sm font-semibold sm:text-base">Books</div>
+          </div>
 
-            <div class="flex flex-col items-center md:p-4">
-              <div class="text-xl font-bold text-indigo-500 sm:text-2xl md:text-3xl">
-                333
-              </div>
-              <div class="text-sm font-semibold sm:text-base">Spells</div>
+          <div class="flex flex-col items-center md:p-4">
+            <div class="text-xl font-bold text-indigo-500 sm:text-2xl md:text-3xl">
+              5246
             </div>
+            <div class="text-sm font-semibold sm:text-base">Characters</div>
+          </div>
 
-            <div class="flex flex-col items-center md:p-4">
-              <div class="text-xl font-bold text-indigo-500 sm:text-2xl md:text-3xl">
-                168
-              </div>
-              <div class="text-sm font-semibold sm:text-base">Potions</div>
+          <div class="flex flex-col items-center md:p-4">
+            <div class="text-xl font-bold text-indigo-500 sm:text-2xl md:text-3xl">
+              333
             </div>
+            <div class="text-sm font-semibold sm:text-base">Spells</div>
+          </div>
+
+          <div class="flex flex-col items-center md:p-4">
+            <div class="text-xl font-bold text-indigo-500 sm:text-2xl md:text-3xl">
+              168
+            </div>
+            <div class="text-sm font-semibold sm:text-base">Potions</div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

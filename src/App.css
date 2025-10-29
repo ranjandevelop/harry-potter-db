@@ -13,6 +13,7 @@ html {
 }
 
 #nav-brand-logo {
+  letter-spacing: 2.5px;
   font-family: HarryPotterFont;
   color: #fec012;
 }
