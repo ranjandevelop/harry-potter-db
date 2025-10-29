@@ -1,25 +1,19 @@
-import Hero from "../../components/Hero";
+import { Hero } from "../../components/index";
 import Card from "../../components/Card/Card";
 
 const Home = () => {
   return (
     <>
       <Hero />
-      <div class="bg-white py-6 sm:py-8 lg:py-12">
+      <div class="bg-neutral-800 py-6 sm:py-8 lg:py-12" id="explore">
         <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-          <div class="mb-10 md:mb-16">
+          {/* <div class="mb-10 md:mb-16">
             <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
               Explore
             </h2>
+          </div> */}
 
-            {/* <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
-              This is a section of some simple filler text, also known as
-              placeholder text. It shares some characteristics of a real written
-              text but is random or otherwise generated.
-            </p> */}
-          </div>
-
-          <div class="grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-8">
+          <div class="grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-5 xl:gap-8">
             {categories.map((item, i) => (
               <Card
                 key={i}

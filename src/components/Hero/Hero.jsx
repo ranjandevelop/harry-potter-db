@@ -1,4 +1,4 @@
-import hogwartshero from "../assets/hogwarts-hero.mp4";
+import hogwartshero from "../../assets/hogwarts-hero.mp4";
 const Hero = () => {
   return (
     <>
@@ -22,15 +22,13 @@ const Hero = () => {
               Welcome to the Hogwarts.
             </a>
           </h1>
-          <p class="mb-8 text-lg font-normal text-gray-400 lg:text-xl sm:px-16 lg:px-48">
-            Step into the wizarding world of Harry Potter explore detailed
-            character profiles, uncover the secrets of magical spells, and dive
-            into the art of potions. A space for fans to relive the magic
-            through stories, knowledge, and enchantment.
+          <p class="mb-8 text-lg font-normal text-gray-50 lg:text-xl sm:px-16 lg:px-48">
+            Discover the magic of Hogwarts. Explore spells, characters, and
+            potions that shaped the wizarding world.
           </p>
           <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
             <a
-              href="#sectionHarryPotter"
+              href="#explore"
               class="w-[110px] h-[40px] flex items-center justify-start gap-2 bg-white rounded-full text-neutral-900 font-semibold border-none cursor-pointer pl-2 shadow-md transition-all duration-500 hover:bg-[] active:scale-95"
             >
               <svg
@@ -48,33 +46,33 @@ const Hero = () => {
           </div>
         </div>
 
-        <div class="grid grid-cols-2 gap-8 md:grid-cols-4 md:gap-0">
+        <div class="grid grid-cols-2 gap-8 md:grid-cols-4 md:gap-0 md:divide-x">
           <div class="flex flex-col items-center md:p-4">
-            <div class="text-xl font-bold text-indigo-500 sm:text-2xl md:text-3xl">
+            <div class="text-xl font-bold text-[#fec012] sm:text-2xl md:text-3xl">
               7
             </div>
-            <div class="text-sm font-semibold sm:text-base">Books</div>
+            <div class="text-sm font-semibold sm:text-gray-50">Books</div>
           </div>
 
           <div class="flex flex-col items-center md:p-4">
-            <div class="text-xl font-bold text-indigo-500 sm:text-2xl md:text-3xl">
+            <div class="text-xl font-bold text-[#fec012] sm:text-2xl md:text-3xl">
               5246
             </div>
-            <div class="text-sm font-semibold sm:text-base">Characters</div>
+            <div class="text-sm font-semibold sm:text-gray-50">Characters</div>
           </div>
 
           <div class="flex flex-col items-center md:p-4">
-            <div class="text-xl font-bold text-indigo-500 sm:text-2xl md:text-3xl">
+            <div class="text-xl font-bold text-[#fec012] sm:text-2xl md:text-3xl">
               333
             </div>
-            <div class="text-sm font-semibold sm:text-base">Spells</div>
+            <div class="text-sm font-semibold sm:text-gray-50">Spells</div>
           </div>
 
           <div class="flex flex-col items-center md:p-4">
-            <div class="text-xl font-bold text-indigo-500 sm:text-2xl md:text-3xl">
+            <div class="text-xl font-bold text-[#fec012] sm:text-2xl md:text-3xl">
               168
             </div>
-            <div class="text-sm font-semibold sm:text-base">Potions</div>
+            <div class="text-sm font-semibold sm:text-gray-50">Potions</div>
           </div>
         </div>
       </section>

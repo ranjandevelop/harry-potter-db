@@ -13,7 +13,7 @@ const Header = () => {
     <>
       <Container>
         <Outlet />
-        <Footer />
+        {/* <Footer /> */}
       </Container>
     </>
   );
