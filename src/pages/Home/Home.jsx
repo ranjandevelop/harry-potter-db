@@ -7,26 +7,6 @@ const Home = () => {
   return (
     <>
       <Hero />
-      {/* <div class="bg-neutral-800 py-6 sm:py-8 lg:py-12" id="explore">
-        <div class="mx-auto max-w-screen-2xl px-4 md:px-8"> */}
-      {/* <div class="mb-10 md:mb-16">
-            <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
-              Explore
-            </h2>
-          </div> */}
-
-      {/* <div class="grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-5 xl:gap-8">
-            {categories.map((item, i) => (
-              <Card
-                key={i}
-                name={item.title}
-                cover={item.image}
-                desc={item.description}
-              />
-            ))}
-          </div> */}
-      {/* </div>
-      </div> */}
       <div
         class="p-10 card__grid place-items-center bg-[#003028] place-content-center min-h-screen"
         style={{ backgroundImage: `url(${texture})` }}

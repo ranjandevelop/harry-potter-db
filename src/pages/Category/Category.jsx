@@ -49,7 +49,7 @@ const Category = () => {
         </div>
       )}
 
-      <div className="flex flex-wrap justify-center bg-[#003028] p-5">
+      <div className="flex flex-wrap justify-center bg-[#003028] p-5 h-[100vh] overflow-scroll">
         {category.length > 0 ? (
           category.map((data) => (
             <Link key={data.id} to={`${url}/${data.attributes.slug}`}>
