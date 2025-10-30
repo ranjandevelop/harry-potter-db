@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Card } from "../../components/index";
+import { SearchCard } from "../../components/index";
 import { useEffect, useState } from "react";
 
 const Category = () => {
@@ -29,7 +29,7 @@ const Category = () => {
           <label className="input input-bordered flex items-center gap-2 min-w-[200px] m-4">
             <input
               type="text"
-              className="p-2 rounded"
+              className="p-2 rounded-lg border"
               placeholder="Spell the magic word!"
               onChange={handleOnChange}
             />
@@ -49,11 +49,11 @@ const Category = () => {
         </div>
       )}
 
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center bg-[#003028] p-5">
         {category.length > 0 ? (
           category.map((data) => (
             <Link key={data.id} to={`${url}/${data.attributes.slug}`}>
-              <Card
+              <SearchCard
                 key={data.id}
                 name={
                   data.attributes.name

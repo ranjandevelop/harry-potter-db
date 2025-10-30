@@ -3,5 +3,6 @@ import Footer from "./Footer/Footer";
 import Container from "./Container/Container";
 import Card from "./Card/Card";
 import Hero from "./Hero/Hero";
+import SearchCard from "./SearchCard/SearchCard";
 
-export { Header, Footer, Container, Card, Hero };
+export { Header, Footer, Container, Card, Hero, SearchCard };
